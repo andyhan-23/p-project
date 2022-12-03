@@ -1,6 +1,16 @@
 import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const MainPage = () => {
-  return <h1>농작물 병해 분류</h1>;
+  return (
+    <>
+      <Header />
+
+      <h1>asasdad</h1>
+      <h1>Asdsa</h1>
+      <Footer />
+    </>
+  );
 };
 export default MainPage;
