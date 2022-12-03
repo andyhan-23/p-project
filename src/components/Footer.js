@@ -1,14 +1,13 @@
 import styled from 'styled-components';
-import Responsive from '../container/Header';
+import Responsive from '../container/Responsive';
 
-const HeaderBlock = styled.div`
-  position: relative;
+const FooterBlock = styled.div`
+  position: fixed;
   width: 100%;
   background: white;
   box-shadow: 0px 2px 4px rgba(0, 0, 0.1);
   margin-top: 1rem;
   padding: 1rem;
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -16,9 +15,8 @@ const HeaderBlock = styled.div`
 `;
 
 const Wrapper = styled(Responsive)`
-  height: 4rem;
+  height: 30rem;
   display: fixed;
-
   align-items: center;
   justify-content: center;
   .logo {
@@ -35,11 +33,11 @@ const Spacer = styled.div`
 const Footer = () => {
   return (
     <>
-      <HeaderBlock>
+      <FooterBlock>
         <Wrapper>
           <div className="logo">방제법</div>
         </Wrapper>
-      </HeaderBlock>
+      </FooterBlock>
       <Spacer />
     </>
   );

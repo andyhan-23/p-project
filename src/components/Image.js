@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import Responsive from '../container/Responsive';
 
-const HeaderBlock = styled.div`
+const ImageBlock = styled.div`
   position: fixed;
-  width: 100%;
-  background: white;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0.1);
+  width: 50%;
+  height: 50%;
+  background: red;
 `;
 
 const Wrapper = styled(Responsive)`
@@ -20,20 +20,15 @@ const Wrapper = styled(Responsive)`
   }
 `;
 
-const Spacer = styled.div`
-  height: 4rem;
-`;
-
-const Header = () => {
+const Image = () => {
   return (
     <>
-      <HeaderBlock>
+      <ImageBlock>
         <Wrapper>
-          <div className="logo">농작물 병해 인식 시스템 </div>
+          <input type="file" placeholder="이미지" />
         </Wrapper>
-      </HeaderBlock>
-      <Spacer />
+      </ImageBlock>
     </>
   );
 };
-export default Header;
+export default Image;

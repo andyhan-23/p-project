@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 import Responsive from '../container/Responsive';
 
-const HeaderBlock = styled.div`
+const DetailBlock = styled.div`
   position: fixed;
-  width: 100%;
-  background: white;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0.1);
+  width: 50%;
+  height: 50%;
+  background: green;
+  margin-right: 0 auto;
+  right: 0;
 `;
 
 const Wrapper = styled(Responsive)`
@@ -20,20 +22,15 @@ const Wrapper = styled(Responsive)`
   }
 `;
 
-const Spacer = styled.div`
-  height: 4rem;
-`;
-
-const Header = () => {
+const Detail = () => {
   return (
     <>
-      <HeaderBlock>
+      <DetailBlock>
         <Wrapper>
-          <div className="logo">농작물 병해 인식 시스템 </div>
+          <h1>설명</h1>
         </Wrapper>
-      </HeaderBlock>
-      <Spacer />
+      </DetailBlock>
     </>
   );
 };
-export default Header;
+export default Detail;
