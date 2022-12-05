@@ -9,7 +9,7 @@ const HeaderBlock = styled.div`
 `;
 
 const Wrapper = styled(Responsive)`
-  height: 4rem;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
