@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Image from '../components/Image';
-import Detail from '../components/Deatail';
+import Detail from '../components/Detail';
 
 const MainPage = () => {
   return (
